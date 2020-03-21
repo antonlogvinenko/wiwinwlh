@@ -27,7 +27,7 @@ In fact, the Haskell community is a synthesis between multiple disciplines of
 academic computer science and industrial users from large and small firms, all
 of whom contribute back to the language ecosystem.
 
-Originally, Haskell was borne out of academic research. Designed as an ML
+Originally, Haskell was born out of academic research. Designed as an ML
 dialect, it was initially inspired by an older language called Miranda. In the
 early 90s, a group of academics formed the GHC committee to pursue building a
 research vehicle for lazy programming languages as a replacement for Miranda.
@@ -397,7 +397,7 @@ $ cabal test <name>
 
 Moreover, arbitrary shell commands can be invoked with the
 [GHC](https://www.haskell.org/ghc/) environmental variables.  It is quite common
-is to run a new bash shell with this command such that the ``ghc`` and ``ghci``
+to run a new bash shell with this command such that the ``ghc`` and ``ghci``
 commands use the package environment. This can also run any system executable
 with the `GHC_PACKAGE_PATH` variable set to the libraries [package
 database](#package-databases).
@@ -1292,7 +1292,7 @@ as an editor agnostic backend that interfaces with GHC and Cabal to query code.
 Linux Packages
 -------------
 
-There are several upstream packages for Linux packages which are released by GHC
+There are several upstream packages for Linux which are released by GHC
 development. The key ones of note for Linux are:
 
 * [Debian Packages](https://downloads.haskell.org/~debian/)
@@ -1404,7 +1404,7 @@ import qualified Data.Map.Strict as M
 ```
 
 A main module is a special module which reserves the name `Main` and has a
-mandatory export of type ``IO ()`` which is invoked when the executable is run..
+mandatory export of type ``IO ()`` which is invoked when the executable is run.
 This is the entry point from the system into a Haskell program.
 
 ```haskell
@@ -1638,7 +1638,7 @@ Haskell take a single argument. For multi-argument functions (some of which
 we've already seen), arguments will be individually applied until the function
 is *saturated* and the function body is evaluated.
 
-For example, the add function from above can be partially applied to produce an
+For example, the `add` function from above can be partially applied to produce an
 add1 function:
 
 ```haskell
